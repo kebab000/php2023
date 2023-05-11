@@ -1,7 +1,8 @@
+
 .searchType__wrap {
     width: 100%;
     height: 800px;
-    background-image: url(/html/assets/img/MAIN/search__img01.png);
+    background-image: url(/php2/html/assets/img/MAIN/search__img01.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,10 +13,8 @@
 .searchType__wrap h2 {
     font-size: 40px;
     font-weight: bold;
-    padding-top: 120px;
-    margin-bottom: 65px;
-
-
+    padding-top: 250px;
+    margin-bottom: 35px;
 }
 .search__box {
     position: relative;
@@ -42,7 +41,7 @@
     position: absolute;
     top: 23px;
     left: 37%;
-    background-image: url(/html/assets/img/MAIN/search__icon01.png);
+    background-image: url(/php2/html/assets/img/MAIN/search__icon01.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -13,11 +13,15 @@
 @import "intro.css";
 
 /* * Join */ 
-@import "/html/assets/css/LOGIN/join.css";
+@import "/php2/html/assets/css/LOGIN/join.css";
 
 /* login */
-@import "/html/assets/css/LOGIN/login.css";
+@import "/php2/html/assets/css/LOGIN/login.css";
 
-/* login */
-@import "board.css";
+
+/* board */
+@import "/php2/html/assets/css/BOARD/board.css";
+
+/* community */
+@import "/php2/html/assets/css/NAV/community.css";
 

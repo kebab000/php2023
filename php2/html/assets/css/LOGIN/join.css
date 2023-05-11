@@ -1,17 +1,4 @@
-body {position: relative;}
-body::after {
-    content: "PLANTY";
-    position: absolute;
-    font-family: var(--main__en);
-    font-size: 300px;
-    font-weight: 900;
-    width:500px;
-    color: var(--color__white);
-    left: 15%;
-    top: 30%;
-    z-index: -1000;
-    filter: blur(6px);
-}
+
 #main {
     /* background-color: #5ae622; */
    

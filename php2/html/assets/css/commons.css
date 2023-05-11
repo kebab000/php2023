@@ -73,6 +73,7 @@ body.windows {
     border-radius: 5px;
     padding: 0.5em;
 }
+
 /*  */
 .btnStyle3  {
     display: inline-block;
@@ -191,6 +192,9 @@ label.required::after {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.bgStyle3 {
+    background-color: var(--bg__gray2);
 }
 /* media */
 
