@@ -27,29 +27,5 @@ dot.forEach((el, i) => {
 });
 setInterval(func,3000);
 
-// 컨텐츠 필터
-    // filter buttons
-    // $('.filter a').click(function () {
-    //         var $this = $(this);
-    //         // don't proceed if already selected
-    //         if ($this.hasClass('selected')) {
-    //             return;
-    //     }
-
-    //     var $optionSet = $this.parents('.option-set');
-    //     // change selected class
-    //     $optionSet.find('.selected').removeClass('selected');
-    //     $this.addClass('selected');
-
-    //     // store filter value in object
-    //     // i.e. filters.color = 'red'
-    //     // var group = $optionSet.attr('data-filter-group');
-    //     // filters[group] = $this.attr('data-filter-value');
-    //     // convert object into array
-    //     // init Isotope
-
-    //     return false;
-    // });
-
-    // 연습연습
-
+            
+            

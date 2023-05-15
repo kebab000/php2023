@@ -121,7 +121,7 @@
     display: inline-block;
     text-align: center;
 }
-span {
+.join__inner span {
   position: relative;
   display: flex;
   align-items: center;
@@ -129,7 +129,7 @@ span {
   flex-grow: 1;
 }
 
-span::after {
+.join__inner span::after {
   content: attr(data-text);
   position: absolute;
   background-color: #FC4F4F;

@@ -81,7 +81,7 @@
 fieldset > div {
     margin-bottom: 10px;
 }
-#PassQuestion {
+#youQuestion {
     color: #979797;
     font-family: var(--main__ko);
     font-weight: 400;
@@ -161,4 +161,8 @@ fieldset > div {
     font-family: var(--main__ko);
     color: var(--color__green);
     font-weight: 400;  
+}
+.join__form .msg {
+    padding: 7px 0;
+    color: var(--bg__red);
 }

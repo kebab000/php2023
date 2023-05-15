@@ -79,7 +79,7 @@
 
                     //메세지 출력
                     function msg($alert){
-                        echo "<p class='intro__text'>$alert</p>";
+                        echo "<p>$alert</p>";
                     };
 
                     // 이메일 유효성 검사

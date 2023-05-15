@@ -182,7 +182,9 @@ label.required::after {
     font-weight: 900;
     width:500px;
     color: var(--color__white);
-    left: 5%;
+    left: 50%;
+    transform: translateX(-120%);
+    text-align: center;
     top: 30%;
     z-index: -1000;
     filter: blur(6px);

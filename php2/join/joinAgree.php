@@ -23,7 +23,7 @@
             <!-- join__inner -->
             <div class="join__inner">
                 <div class="join__form">
-                    <form action="#" name="#" method="post">
+                    <form action="join.php" name="joinAgree" method="post">
                         <fieldset>
                             <legend class="blind">회원가입 영역</legend>
                             <div class="agree__text">
@@ -95,7 +95,7 @@
                                 <label for="myCheckbox">이용약관 동의 및 개인정보 처리방침 (필수)</label>
                                 <input type="checkbox" id="myCheckbox" name="myCheckbox" value="isChecked" required>
                             </div>
-                            <button type="submit" class="btnStyle4"><a href="join.php">다음</a></button>
+                            <button type="submit"class="btnStyle4">다음</button>
                         </fieldset>
                     </form>
                 </div>

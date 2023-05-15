@@ -93,7 +93,6 @@
     color: #fff;
     box-shadow: 0px 3px 5px #9c9c9c;
     border-radius: 5px;
-    display: inline-block;
     line-height: 16px;
     margin-right: 40px;
 }
@@ -206,14 +205,221 @@
     height: 320px;
 }
 .contents__view .cont__desc {
-    padding: 40px 0 60px 0;
+    padding: 40px 75px 60px 75px;
     font-size: 16px;
     line-height: 1.8;
     color: var(--color__black);
 }
 /* comment */
+.comment {
+    padding-left: 75px;
+}
 .comment .comment__count {
     font-size: 16px;
     color: var(--color__green);
     font-weight: 500;
+    margin-bottom: 40px;
+    display: inline-block;
 }
+.comment__write {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin-bottom: 35px;
+}
+.comment__write img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.comment__write input {
+    width: calc(100% - 175px);
+    height: 80px;
+    margin-right: 75px;
+    font-size: 18px;
+}
+.comment__write button {
+    display: inline-block;
+    font-size: 16px;
+    font-family: var(--main__ko);
+    padding: 10px 12px;
+    background-color: var(--color__green);
+    color: #fff;
+    box-shadow: 0px 3px 5px #9c9c9c;
+    border-radius: 5px;
+    line-height: 16px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px #9c9c9c;
+    margin-right: 75px;
+    margin-top: 12px;
+}
+/* .comment__view */
+.comment__view {
+    display: flex;
+    align-items: top;
+    padding-bottom: 40px;
+}
+.comment__view > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+.comment__view .user {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+}
+.comment__view .time {
+    font-weight: 300;
+    padding: 0 5px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.comment__view > div {
+    margin-right: 75px;
+    margin-left: 20px;
+    width: calc(100% - 175px);
+}
+.comment__view > div >button {
+    background-color: #fff;
+    color: var(--color__green);
+    border-radius: 10px;
+
+} 
+.comment__view .desc {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+/* comment__view2 */
+.comment__view2 {
+    display: flex;
+    align-items: top;
+    padding-bottom: 40px;
+    padding-left: 80px;
+}
+.comment__view2 > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+.comment__view2 .user {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+}
+.comment__view2 .time {
+    font-weight: 300;
+    padding: 0 5px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.comment__view2 > div {
+    margin-right: 75px;
+    margin-left: 20px;
+    width: calc(100% - 175px);
+}
+.comment__view2 > div >button {
+    background-color: #fff;
+    color: var(--color__green);
+    border-radius: 10px;
+
+} 
+.comment__view2 .desc {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 5px;
+}
+/* comment__wirte2 */
+.comment__write2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin-bottom: 35px;
+    padding-left: 80px;
+}
+.comment__write2 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.comment__write2 input {
+    width: calc(100% - 180px);
+    height: 80px;
+    margin-right: 75px;
+    font-size: 18px;
+}
+.comment__write2 button {
+    display: inline-block;
+    font-size: 16px;
+    font-family: var(--main__ko);
+    padding: 10px 12px;
+    background-color: var(--color__green);
+    color: #fff;
+    box-shadow: 0px 3px 5px #9c9c9c;
+    border-radius: 5px;
+    line-height: 16px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px #9c9c9c;
+    margin-right: 75px;
+    margin-top: 12px;
+}
+/* write */
+
+
+.community__W__inner {
+    padding: 120px 0;
+}
+.inputStyle_commWrite {
+    border: none;
+    border-bottom: 3px solid #006241;
+    background-color: #fff;
+    padding: 20px 20px;
+    font-size: 40px;
+    width: 100%;
+    margin-bottom: 40px;
+    color: #006241;
+}
+.community__W__inner form select {
+    width: 200px;
+    height: 35px;
+    border: 2px solid #006241;
+    color: #222;
+    padding: 5px 0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.community__W__inner form select:focus {
+    border: 2px solid #006241;
+}
+.community__W__inner form select > option {
+    display: inline-block;
+    border: 2px solid #006241;
+}
+
+
+
+.community__W__inner .editor_btn {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.community__W__inner .editor_btn > .editSave_btn {
+    display: inline-block;
+    font-size: 18px;
+    font-family: var(--main__ko);
+    padding: 16px 18px;
+    background-color: var(--color__green);
+    color: #fff;
+    box-shadow: 0px 3px 5px #9C9C9C;
+    border-radius: 5px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
