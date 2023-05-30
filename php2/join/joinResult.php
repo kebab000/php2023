@@ -9,10 +9,8 @@
         <?php include "../include/head.php" ?>
 </head>
 <body class="bgStyle1">
-    
 <?php include "../include/skip.php" ?>
 <!-- //skip -->
-
 <?php include "../include/header.php" ?>
 <!-- //header -->
     <main id="main" class="mt120 container">
@@ -24,15 +22,29 @@
             <!-- join__inner -->
             <div class="join__inner">
                 <div class="join__form">
-                    <form action="#" name="#" method="post">
+                    <form action="../login/login.php" name="joinResult" method="post">
                         <fieldset>
                             <legend class="blind">회원가입 영역</legend>
                             <div class="join_end__desc">
-                                <p>회원가입이 완료 되었습니다.<br>
-                                    환영합니다.
-                                </p>
+                                
+                            <?php
+                                //메세지 출력
+                                echo "<p>회원가입을 축하합니다. 로그인 해주세요</p>";
+                              
+                                include "../connect/connect.php";
+                                $youEmail = $_POST['youEmail'];
+                                $youName = $_POST['youName'];
+                                $youNick = $_POST['youNick'];
+                                $youPass = $_POST['youPass'];
+                                $youPhone = $_POST['youPhone'];
+                                $youQuestion = $_POST['youQuestion'];
+                                $youAnswer = $_POST['youAnswer'];
+                                $regTime = time();
+                                $sql = "INSERT INTO plantyMember(youEmail, youName, youNick, youPass, youPhone, myImgName,youQuestion, youAnswer, regTime) VALUES('$youEmail', '$youName','$youNick', '$youPass', '$youPhone','Img_default.jpg', '$youQuestion','$youAnswer', '$regTime')";
+                                $connect -> query($sql);
+                            ?>
                             </div>
-                            <button type="submit" class="btnStyle4"><a href="login.html">로그인</a></button>
+                            <button type="submit" class="btnStyle4">로그인</button>
                         </fieldset>
                     </form>
                 </div>
@@ -40,9 +52,6 @@
         </div>
     </main>
     <!-- //main -->
-
     <?php include "../include/footer_min.php" ?>
     <!-- //footer -->
-    
 </body>
-</html>

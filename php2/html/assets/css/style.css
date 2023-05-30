@@ -12,12 +12,11 @@
 /* intro */
 @import "intro.css";
 
-/* * Join */ 
+/* * Join */
 @import "/php2/html/assets/css/LOGIN/join.css";
 
 /* login */
 @import "/php2/html/assets/css/LOGIN/login.css";
-
 
 /* board */
 @import "/php2/html/assets/css/BOARD/board.css";
@@ -25,3 +24,10 @@
 /* community */
 @import "/php2/html/assets/css/NAV/community.css";
 
+/*  */
+
+@import "/php2/html/assets/css/NAV/mypage.css";
+
+/* calendar */
+
+@import "/php2/html/assets/css/NAV/calendar.css";

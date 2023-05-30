@@ -48,4 +48,4 @@
         2023 PLANTY<br>Copyright ⓒAll Rights Reserved.
     </div>
 </footer>
-<script src="../html/assets/js/headerNav.js"></script>
+<!-- <script src="../html/assets/js/headerNav.js"></script> -->

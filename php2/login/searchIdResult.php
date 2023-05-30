@@ -1,3 +1,11 @@
+<?php
+    include "../connect/connect.php";
+    $youName = $_POST['youName'];
+    $youPhone = $_POST['youPhone'];
+    $sql = "SELECT youEmail, youName, youPass FROM plantyMember WHERE youName = '$youName' AND youPhone = '$youPhone'";
+    $result = $connect -> query($sql);
+    
+?>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -26,7 +34,19 @@
                     <form action="#" name="#" method="post">
                         <fieldset>
                             <legend class="blind">아이디 찾기 완료</legend>
-                            <p class="mt30 mb30">OOO님의 아이디는 가나다 입니다.</p>
+                            <p class="mt30 mb30">
+                                <?php
+                                if($result){
+                                    $count = $result -> num_rows;
+                                    if($count == 0){
+                                        echo('이름 또는 전화번호가 잘못되었습니다. 다시 한번 확인해주세요');
+                                    } else {
+                                        $memberInfo = $result -> fetch_array(MYSQLI_ASSOC);
+                                        echo $youName . "님의 아이디는 " . $memberInfo['youEmail'] . "입니다.";
+                                    };
+                                }   
+                                ?>
+                            </p>
                             <button type="submit" class="btnStyle2_login btnStyle2 mt20 mb30 "><a href="login.html">로그인</a></button>
                             <div class="login_more mt10 btStyle">
                                     <span><a href="searchPass.php">비밀번호 찾기</a></span>

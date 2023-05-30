@@ -7,8 +7,10 @@
     $sql .= "youNick varchar(10) NOT NULL,";
     $sql .= "youPass varchar(20) NOT NULL,";
     $sql .= "youPhone varchar(20),";
-    $sql .= "youQuestion VARCHAR(100),";
-    $sql .= "youAnswer VARCHAR(100),";
+    $sql .= "youQuestion varchar(100),";
+    $sql .= "youAnswer varchar(100),";
+    $sql .= "blogImgName varchar(100) DEFAULT NULL,";
+    $sql .= "blogImgSize varchar(100) DEFAULT NULL,";
     $sql .= "regTime int(40) NOT NULL,";
     $sql .= "PRIMARY KEY(memberID)";
     $sql .= ") charset=utf8;";

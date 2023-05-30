@@ -14,9 +14,6 @@
     margin: 0 250px;
 
 }
-.intro__inner {
-
-}
 
 .intro__h2 {
     font-size: 70px;
@@ -65,19 +62,23 @@
 .input__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .checkbtn {
-    padding: 0 30px;
+    padding: 9px 30px;
     width: 24%;
     height: 40px;
     color: var(--color__white);
     background-color: var(--color__green);
     font-size: 16px;
     cursor: pointer;
-    
-    
+    display: inline-block;
 }
-
+.join__form .msg {
+    padding: 7px 0;
+    color: red;
+}
 fieldset > div {
     margin-bottom: 10px;
 }
@@ -137,8 +138,6 @@ fieldset > div {
     padding: 0.5em 3em;
     border-radius: 50px;
     cursor: pointer;
-}
-.btnStyle4 a {
     color: var(--color__white);
 }
 .btnStyle5 {
@@ -149,6 +148,7 @@ fieldset > div {
     padding: 0.5em 3em;
     border-radius: 50px;
     cursor: pointer;
+    color: #fff;
 }
 .btnStyle5 a {
     color: var(--color__white);
@@ -161,8 +161,4 @@ fieldset > div {
     font-family: var(--main__ko);
     color: var(--color__green);
     font-weight: 400;  
-}
-.join__form .msg {
-    padding: 7px 0;
-    color: var(--bg__red);
 }

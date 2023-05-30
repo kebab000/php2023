@@ -1,5 +1,5 @@
 .bg2 {
-    background: #F6F5EF;
+    background: #f6f5ef;
 }
 #mypage__wrap {
     padding-top: 80px;
@@ -41,6 +41,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    object-fit: cover;
 }
 .profile__info {
     width: 100%;
@@ -70,10 +71,10 @@
 .nav__list > ul > li {
     list-style: none;
     box-sizing: border-box;
-    border-bottom:1px solid #777;
+    border-bottom: 1px solid #777;
     padding: 10px 0;
 }
-.nav__list > ul > li:nth-child(3)  {
+.nav__list > ul > li:nth-child(3) {
     padding-bottom: 0;
 }
 .nav__list > ul > li:hover {
@@ -88,14 +89,13 @@
 }
 .nav__list > ul > li > ul {
     /* display: none; */
-    display: block;
     margin-top: 10px;
 }
 .nav__list > ul > li > ul > li {
-    display:block;
+    display: block;
     list-style: none;
     padding: 10px 0 10px;
-    border-top:1px solid #777;
+    border-top: 1px solid #777;
     background-color: #fff;
     /* margin-bottom: 10px; */
 }
@@ -113,7 +113,7 @@
 .myinfo {
     box-sizing: border-box;
     width: 100%;
-    height: 400px;
+    height: 520px;
     background-color: #fff;
     padding: 30px;
 }
@@ -125,11 +125,11 @@
     margin-bottom: 30px;
 }
 .myinfo h2::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 5px;
     height: 18px;
-    background-color: #03351A;
+    background-color: #03351a;
     top: 4px;
     left: -20px;
 }
@@ -146,6 +146,7 @@
     background-color: #090202;
     margin-right: 10px;
     margin-left: 10px;
+    object-fit: cover;
 }
 .myinfo__profile figure p {
     padding: 20px;
@@ -164,7 +165,59 @@
     display: inline-block;
     margin-top: 15px;
     padding: 4px 20px 0 20px;
-    height:30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: var(--color__green);
+    color: #fff;
+}
+/* 마이페이지 수정 */
+.myinfo__profile__modi {
+    display: flex;
+}
+.myinfo__profile__modi figure {
+    display: flex;
+}
+
+.myinfo__profile__modi figure input {
+    display: block;
+    padding: 5px;
+    margin-right: 30px;
+    margin-top: 35px;
+    margin-left: 10px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+}
+.myinfo__profile__modi figure input:first-child {
+    margin-top: 0px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+.myinfo__profile__modi figure input:first-child::after {
+    line-height: 100px;
+    text-align: center;
+    content: "이미지 변경";
+    color: var(--color__white);
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.myinfo__profile__modi button {
+    display: inline-block;
+    margin-top: 35px;
+}
+.myinfo__profile__modi a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 4px 20px 0 20px;
+    height: 30px;
     border-radius: 50px;
     background-color: var(--color__green);
     color: #fff;
@@ -180,31 +233,44 @@
     font-size: 14px;
     font-weight: 700;
 }
-.myinfo__info>span {
+.myinfo__info > span {
     font-size: 10px;
     color: #333;
 }
-.myinfo__info>div {
+.myinfo__info > div {
     margin: 0 0 20px 20px;
 }
-.myinfo__info>div p {
+.myinfo__info > div p {
     width: 300px;
-    margin-left: 35%;
+    margin-left: 25%;
     box-sizing: border-box;
     display: inline-block;
 }
-.myinfo__info>div input {
+.myinfo__info > div input {
     width: 300px;
-    margin-left: 35%;
+    margin-left: 25%;
     box-sizing: border-box;
     display: inline-block;
     text-align: center;
 }
-.myinfo__info>div:last-child input {
-    margin-left: 33%;
+.myinfo__info__sec {
+    margin: 0 0 0 20px !important;
 }
-.myinfo__info>div:last-child p {
-    margin-left: 33%;
+.myinfo__info > div input.mymodi__input {
+    width: 236px;
+}
+p.modiMsg {
+    text-align: center;
+    color: red;
+    font-size: 0.7em;
+    margin: 10px auto;
+    display: block;
+}
+.myinfo__info > div:last-child input {
+    margin-left: 23%;
+}
+.myinfo__info > div:last-child p {
+    margin-left: 23%;
 }
 /* myplt */
 .myplt {
@@ -242,11 +308,11 @@
     position: relative;
 }
 .myplt h2::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 5px;
     height: 18px;
-    background-color: #03351A;
+    background-color: #03351a;
     top: 4px;
     left: -20px;
 }
@@ -256,12 +322,13 @@
     justify-content: space-between;
 }
 .myplt__card {
-    width: 32.3333%;
+    width: 90%;
 }
 .myplt__card img {
     width: 100%;
     height: 400px;
     border-bottom: 10px solid green;
+    object-fit: cover;
 }
 /* mywrite */
 .mywrite {
@@ -281,17 +348,17 @@
     justify-content: space-between;
 }
 .mywrite h2::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 5px;
     height: 18px;
-    background-color: #03351A;
+    background-color: #03351a;
     top: 4px;
     left: -20px;
 }
 .mywrite_title a {
     display: block;
-    margin-right: 20px;
+
     color: #000;
     position: relative;
 }
@@ -332,11 +399,11 @@
     position: relative;
 }
 .mycomment h2::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 5px;
     height: 18px;
-    background-color: #03351A;
+    background-color: #03351a;
     top: 4px;
     left: -20px;
 }
@@ -382,10 +449,24 @@
     /* box-shadow: 1px 1px 10px #333; */
     border: 1px solid var(--color__green);
 }
+.myplant__write {
+    display: block;
+    width: 70px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color__green);
+    margin-bottom: 20px;
+    margin-top: -40px;
+    float: right;
+}
+.myplant__write:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
 .myplant__wrap_tit {
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
 }
 .myplant__wrap_tit h2 {
     font-size: 18px;
@@ -395,24 +476,28 @@
     padding: 3px;
 }
 .myplant__wrap_tit h2::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 5px;
     height: 18px;
-    background-color: #03351A;
+    background-color: #03351a;
     top: 4px;
     left: -15px;
 }
 .myplant__wrap_tit a {
     width: 70px;
     height: 30px;
-    border:1px solid var(--color__green);
+    border: 1px solid var(--color__green);
     font-size: 12px;
     padding-left: 12px;
     padding-top: 6px;
     border-radius: 50px;
     color: var(--color__green);
     margin-bottom: 20px;
+}
+.myplant__wrap_tit a:hover {
+    background-color: var(--color__green);
+    color: var(--color__white);
 }
 .myplant__inner {
     width: 100%;
@@ -426,6 +511,7 @@
 .myplant__img img {
     width: 100%;
     height: 360px;
+    object-fit: cover;
 }
 .myplant__info {
     width: 69%;
@@ -448,6 +534,10 @@
     font-weight: 300;
     margin-bottom: 30px;
 }
+.plant__info input {
+    width: 200px;
+    padding: 10px;
+}
 .plant__w_info {
     width: 50%;
     height: 360px;
@@ -460,13 +550,17 @@
     font-weight: bold;
     margin-bottom: 20px;
 }
-.plant__mgm>div {
+.plant__mgm > div {
+    padding: 10px;
+    overflow-y: auto;
     margin-bottom: 8px;
-    height: 30px;
+    word-break: break-all;
+    height: 150px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .plant__mgm p {
+    display: block;
     width: 30%;
     font-size: 18px;
     font-weight: 500;
@@ -481,26 +575,41 @@
     padding: 20px 0 2;
 }
 .schedule {
+    padding: 10px;
     height: 48%;
     overflow-y: scroll;
 }
-.schedule>div {
+.schedule > div {
+    margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
 }
-.schedule>div span {
-    margin-top: 10px;
+.schedule > div span {
     font-size: 12px;
     color: #333;
 }
 .plant__sign {
-    margin: 10px 0 20px ;
+    margin: 10px 0 20px;
     height: 48%;
 }
 .plant__sign input {
+    word-break: break-all;
+    overflow-y: scroll;
     width: 100%;
+    padding: 10px;
     height: 150px;
     text-align: top;
+    vertical-align: top;
+}
+.plant__sign p {
+    word-break: break-all;
+    overflow-y: scroll;
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+    text-align: top;
+    vertical-align: top;
+    background-color: var(--color__white);
 }
 /* 스크롤바의 폭 너비 */
 .schedule::-webkit-scrollbar {
@@ -512,7 +621,20 @@
     height: 20%;
 }
 .schedule::-webkit-scrollbar-track {
-    background: rgba(220, 20, 60, .1);  /*스크롤바 뒷 배경 색상*/
+    background: rgba(220, 20, 60, 0.1); /*스크롤바 뒷 배경 색상*/
+}
+
+/* 스크롤바의 폭 너비 */
+.plant__sign p::-webkit-scrollbar {
+    width: 6px;
+}
+.plant__sign p::-webkit-scrollbar-thumb {
+    background: var(--color__green); /* 스크롤바 색상 */
+    border-radius: 10px; /* 스크롤바 둥근 테두리 */
+    height: 20%;
+}
+.plant__sign p::-webkit-scrollbar-track {
+    background: rgba(220, 20, 60, 0.1); /*스크롤바 뒷 배경 색상*/
 }
 /* mywritten__table */
 
@@ -534,7 +656,7 @@
     text-align: center;
 }
 .mywritten__table table th {
-    border-bottom: 1px solid var(--color__black);;
+    border-bottom: 1px solid var(--color__black);
     padding: 15px 5px;
     font-weight: 700;
     color: var(--color__green);
@@ -552,4 +674,26 @@
 }
 .mywritten__table table tr:hover {
     background-color: var(--bg__gray2);
+}
+
+.mypage__right figure.myPlantPhoto input {
+    position: relative;
+    height: 330px;
+}
+
+.mypage__right figure.myPlantPhoto input::after {
+    line-height: 300px;
+    text-align: center;
+    content: "이미지 변경";
+    color: var(--color__white);
+    width: 250px;
+    height: 330px;
+    background-color: #332e2e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 5px;
 }

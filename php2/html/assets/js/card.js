@@ -44,3 +44,6 @@ const waitForImages = () => {
 };
 
 waitForImages();
+
+// 브랜드 js
+

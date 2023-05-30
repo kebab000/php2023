@@ -69,7 +69,7 @@ body.windows {
     width: 100%;
     font-size: 1.2rem;
     background-color: var(--color__green);
-    color: var(--color__white);
+    color: var(--color__white) !important;
     border-radius: 5px;
     padding: 0.5em;
 }
@@ -86,10 +86,32 @@ body.windows {
     text-align: center;
     cursor: pointer;
 }
+.btnStyle6  {
+    display: inline-block;
+    background-color: var(--color__green);
+    color: var(--color__white);
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 30px;
+    margin: 1em 0;
+}
+.btnStyle7 {
+    display: inline-block;
+    background-color: var(--color__green);
+    color: var(--color__white);
+    font-size: 0.7em;
+    cursor: pointer;
+    padding: 0.2em 0.6em;
+    border-radius: 2px;
 
+
+}
 /* 간격설정 */
 .mt10 {margin-top: 10px !important;}
 .mt20 {margin-top: 20px !important;}
+.mt25 {margin-top: 25px !important;}
 .mt30 {margin-top: 30px !important;}
 .mt40 {margin-top: 40px !important;}
 .mt50 {margin-top: 50px !important;}

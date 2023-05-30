@@ -5,14 +5,14 @@
     width: 100%;
 }
 .dictionary__search {
-    display: flex;
+    /* display: flex; */
 }
 .dictionary__search h3 {
     display: inline-block;
     font-weight: 500;
     font-size: 32px;
     vertical-align: bottom;
-
+    position: relative;
 }
 .dictionary__search input {
     height: 47px;
@@ -21,13 +21,27 @@
     border-radius: 10px;
     border: 3px solid var(--color__green);
     padding-left: 20px;
+    position: relative;
+    bottom: 9px;
+}
+.dictionary__search__btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    background-image: url(/php2/html/assets/img/DICTIONARY/searchicon.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 15px;
+    top: 6px;
 }
 
 .search__about ul {
     display: flex;
     margin-top: 10px;
-    justify-content: center;
-    margin-left: 40px;
+    justify-content: left;
+    margin-left: 168px;
 
 }
 .search__about ul li {
@@ -44,34 +58,52 @@
 }
 
 /* cards__inner */
-.cards__inner {
+.cards__inner .goboard a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.cards__inner .plant__cards__wrap  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.cards__inner.col2>div {
+.hide  {
+    display: none;
+}
+.cards__inner .plant__cards__wrap .col2>div {
     width: 49%;
 }
-.cards__inner.col3>div {
+.cards__inner .plant__cards__wrap .col3>div {
     width: 32.33333%;
 
 }
-.cards__inner.col4>div,
-.cards__inner>div {
+.cards__inner .plant__cards__wrap .col4>div,
+.cards__inner .plant__cards__wrap >div {
     width: 24%;
 
 }
-.cards__inner.col6>div {
+.cards__inner .plant__cards__wrap .col6>div {
     width: 15.66666%;
 
 }
-.cards__inner> .card {
+.cards__inner .plant__cards__wrap > .card {
     margin: 10px 0;
 }
+.card__img {
+    cursor: pointer;
+}
+
 .card__img img {
     height: 386px;
     border-bottom: 5px solid var(--color__green);
     margin-bottom: 5px;
+    object-fit: cover;
+}
+.card__img img:hover {
+    border: 2px solid var(--color__green);
+    filter: drop-shadow(5px -5px 10px #c9c9c9);
+    transition: all 0.1s;
 }
 .card__title {
     display: flex;
@@ -85,6 +117,14 @@
     font-size: 14px;
     color: #333;
 
+}
+.cards__footer > p {
+    margin-top: 80px;
+    font-size: 25px;
+    text-align: center;
+}
+.cards__footer > p > a {
+    font-size: 20px;
 }
 
 .modal {
@@ -150,7 +190,8 @@
 
   .plant_modal-content .close {
     position: absolute;
-    right: 15px;
+    right: 26px;
+    top: 26px;
     margin-top: -10px;
   }
 
@@ -162,20 +203,24 @@
   }
   .plant_modal__img img {
     width: 100%;
-    height: inherit;
+    height: 100%;
+    object-fit: cover;
 
   }
   .plant_modal__info {
     width: 50%;
     text-align: center;
     overflow-y: scroll;
+    padding: 20px;
     background-color: var(--color__white);
 
   }
   .plant_modal__info > div > h2 {
-    margin-top: 40px;
-    font-size: 18px;
-    font-weight: 600;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--color__green);
+    text-shadow: 5px 5px #d9d9d9;
   }
   .plant_modal__info > div > p {
     font-size: 12px;
@@ -195,7 +240,7 @@
   .plant_modal__info > div > div h4 {
     font-size: 12px;
   }
-  .ps {
+  .p_center {
     width: 350px;
     margin: 0 auto;
   }

@@ -17,7 +17,8 @@
     z-index: 10;
     width: 1160px;
     height: 680px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
+    object-fit: cover;
 }
 .slider.community__img01 {
     background-image: url(/php2/html/assets/img/COMMUNITY/community_Slider01.png);
@@ -64,7 +65,6 @@
     margin: 0 3px;
     display: inline-block;
     z-index: 1000;
-
 }
 #community__slider .slider__dot span.active {
     background-color: #fff;
@@ -98,7 +98,7 @@
 }
 .option-set {
     display: flex;
-    gap : 20px;
+    gap: 20px;
     text-align: center;
 }
 .option-set li {
@@ -109,7 +109,7 @@
     font-family: var(--main__ko);
     padding: 10px 12px;
     background-color: #fff;
-    box-shadow: 0px 3px 5px #9c9c9c; 
+    box-shadow: 0px 3px 5px #9c9c9c;
     border-radius: 5px;
     display: inline-block;
     color: var(--color__green);
@@ -124,11 +124,11 @@
     height: 400px;
     margin-bottom: 40px;
     box-shadow: 0px 3px 5px #9c9c9c;
-    
 }
 .cont_wrap img {
     height: 62%;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 .cont_desc {
     padding: 0 10px;
@@ -164,12 +164,15 @@
 
 /* community__view */
 .contents__header {
-    margin-top: 110px;
-    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
 }
 .contents__header img {
-    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    width: 60%;
     height: 400px;
+    object-fit: cover;
 }
 .contents__view {
     margin-bottom: 60px;
@@ -179,10 +182,16 @@
     font-size: 20px;
     margin-bottom: 20px;
 }
-.contents__view > div > h2 {
-    font-size: 40px;
-
+.contents__view > div > div {
+    display: flex;
+    justify-content: space-between;
 }
+.contents__view > div > div > h2 {
+    font-size: 40px;
+}
+/* .contents__view > div > div > div {
+    display: flex;
+} */
 .contents__view > div > .user {
     display: block;
     font-size: 15px;
@@ -203,12 +212,81 @@
 .contents__view .cont__img img {
     width: 320px;
     height: 320px;
+    object-fit: cover;
 }
 .contents__view .cont__desc {
     padding: 40px 75px 60px 75px;
     font-size: 16px;
     line-height: 1.8;
     color: var(--color__black);
+}
+.commu_mody_title {
+    border: none;
+    border-bottom: 3px solid #006241;
+    background-color: #fff;
+    padding: 20px 20px;
+    font-size: 40px;
+    width: 100%;
+    margin-bottom: 40px;
+    color: #006241;
+}
+.community__M__inner select {
+    width: 200px;
+    height: 35px;
+    border: 2px solid #006241;
+    color: #222;
+    padding: 5px 0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+textarea.cont__desc {
+    border: 3px solid #006241;
+    width: 100%;
+    height: 600px;
+    resize: none;
+    padding: 0.5em;
+    overflow-y: scroll;
+    resize: none;
+}
+.editor_btn_imgName {
+    display: inline-block;
+    font-size: 18px;
+    font-family: var(--main__ko);
+    padding: 16px 18px;
+    vertical-align: middle;
+    border: 1px solid var(--color__green);
+    width: 300px;
+    border-radius: 5px;
+    line-height: 16px;
+    color: var(--color__green);
+    height: 50px;
+}
+.editor_img_choice {
+    display: inline-block;
+    font-size: 18px;
+    font-family: var(--main__ko);
+    padding: 18px 18px;
+    background-color: var(--color__green);
+    color: #fff;
+    box-shadow: 0px 3px 5px #9c9c9c;
+    border-radius: 5px;
+    line-height: 16px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.community__modify {
+    float: right;
+    font-size: 16px;
+    font-family: var(--main__ko);
+    padding: 18px 18px;
+    background-color: var(--color__green);
+    color: #fff;
+    box-shadow: 0px 3px 5px #9c9c9c;
+    border-radius: 5px;
+    line-height: 16px;
+    margin-top: 20px;
 }
 /* comment */
 .comment {
@@ -238,6 +316,7 @@
     height: 80px;
     margin-right: 75px;
     font-size: 18px;
+    background-color: #fff;
 }
 .comment__write button {
     display: inline-block;
@@ -282,12 +361,11 @@
     margin-left: 20px;
     width: calc(100% - 175px);
 }
-.comment__view > div >button {
+.comment__view > div > button {
     background-color: #fff;
     color: var(--color__green);
     border-radius: 10px;
-
-} 
+}
 .comment__view .desc {
     font-size: 16px;
     font-weight: 500;
@@ -323,12 +401,11 @@
     margin-left: 20px;
     width: calc(100% - 175px);
 }
-.comment__view2 > div >button {
+.comment__view2 > div > button {
     background-color: #fff;
     color: var(--color__green);
     border-radius: 10px;
-
-} 
+}
 .comment__view2 .desc {
     font-size: 16px;
     font-weight: 500;
@@ -371,7 +448,6 @@
 }
 /* write */
 
-
 .community__W__inner {
     padding: 120px 0;
 }
@@ -384,6 +460,12 @@
     width: 100%;
     margin-bottom: 40px;
     color: #006241;
+}
+.inputStyle_commWrite.contets {
+    height: 600px;
+    resize: none;
+    padding: 0.5em;
+    overflow-y: scroll;
 }
 .community__W__inner form select {
     width: 200px;
@@ -402,24 +484,66 @@
     border: 2px solid #006241;
 }
 
-
-
 .community__W__inner .editor_btn {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+}
+.community__W__inner .editor_btn .editor_btn_img {
+    display: flex;
+    text-align: center;
+}
+
+.community__W__inner .editor_btn .editor_btn_img > .editor_btn_imgName {
+    display: inline-block;
+    font-size: 18px;
+    font-family: var(--main__ko);
+    padding: 16px 18px;
+    vertical-align: middle;
+    border: 1px solid var(--color__green);
+    width: 300px;
+    border-radius: 5px;
+    line-height: 16px;
+    color: var(--color__green);
+    height: 50px;
+}
+
+.community__W__inner .editor_btn .editor_btn_img > label {
+    display: inline-block;
+    font-size: 18px;
+    font-family: var(--main__ko);
+    padding: 18px 18px;
+    background-color: var(--color__green);
+    color: #fff;
+    box-shadow: 0px 3px 5px #9c9c9c;
+    border-radius: 5px;
+    line-height: 16px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.community__W__inner .editor_btn .editor_btn_img input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
 }
 .community__W__inner .editor_btn > .editSave_btn {
     display: inline-block;
+    justify-content: right;
     font-size: 18px;
     font-family: var(--main__ko);
     padding: 16px 18px;
     background-color: var(--color__green);
     color: #fff;
-    box-shadow: 0px 3px 5px #9C9C9C;
+    box-shadow: 0px 3px 5px #9c9c9c;
     border-radius: 5px;
     line-height: 16px;
     cursor: pointer;
 }
-

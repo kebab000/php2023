@@ -1,3 +1,7 @@
+<?php
+    include "../connect/connect.php";
+?>
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -23,7 +27,7 @@
                 <div class="logo">PLANTY</div>
                 <h2 class="mb20">아이디 찾기</h2>
                 <div>
-                    <form action="#" name="#" method="post">
+                    <form action="searchIdResult.php" name="searchId" method="post">
                         <fieldset>
                             <legend class="blind">아이디 찾기 영역</legend>
                             <div>
@@ -38,22 +42,17 @@
                             </div>
                             <button type="submit" class="btnStyle2_login btnStyle2 mt20 mb20 ">확인</button>
                             <div class="login_more mt10 btStyle">
-                                <span><a href="login__searchPass.html">비밀번호 찾기</a></span>
-                                <span><a href="join_insert.html">회원가입</a></span>
+                                <span><a href="modiPass.php">비밀번호 찾기</a></span>
+                                <span><a href="../join/joinAgree.php">회원가입</a></span>
                             </div>
 
                         </fieldset>
                     </form>
                 </div>
-                <div class="login__footer">
-
-                </div>
             </div>
         </div>
     </main>
     <!-- //main -->
-
-
     <?php include "../include/footer_min.php" ?>
     <!-- //footer -->
 </body>
