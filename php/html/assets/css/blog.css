@@ -98,7 +98,7 @@
     width: 0;
     height: 0;
 }
-.blog__aside .cate.list2 li a span {}
+
 /* blog__search */
 .blog__search {
     text-align: center;
@@ -151,7 +151,7 @@
 .cards__inner.row > .card .card__title {
     width: 67%;
 }
-.card__img {}
+
 .card__img img {
     filter:saturate(0%);
     transition: all 0.3s;
